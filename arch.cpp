@@ -1,12 +1,8 @@
 #include <memory>
 
-bool initMemory(){
+std::shared_ptr<int> initMemory(){
 	
 	auto x = std::make_shared<int>(2);
 	
-	if(x == nullptr)
-		return false;
-	
-	return true;
-	
+	return x;
 }
